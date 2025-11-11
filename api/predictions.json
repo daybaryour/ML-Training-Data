@@ -1,0 +1,13 @@
+[
+  {
+    "id": "ad0db6bd-2b2d-4c15-bb29-360381ae8ba4",
+    "sqft": 3000,
+    "bedrooms": 4,
+    "prediction": 457303,
+    "confidenceInterval": {
+      "lower": 411572,
+      "upper": 503033
+    },
+    "timestamp": "2025-11-11T10:37:02.803Z"
+  }
+]

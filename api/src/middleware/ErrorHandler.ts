@@ -20,7 +20,6 @@ export const errorHandler = (
   err: any,
   req: Request,
   res: Response,
-  next: NextFunction
 ): void => {
   let error = { ...err };
   error.message = err.message;
@@ -63,7 +62,7 @@ export const errorHandler = (
 };
 
 // 404 handler middleware
-export const notFound = (req: Request, res: Response, next: NextFunction): void => {
+export const notFound = (req: Request, _res: Response, next: NextFunction): void => {
   const error = new AppError(`Not found - ${req.originalUrl}`, 404);
   next(error);
 };
